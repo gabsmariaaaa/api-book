@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Properties\NovaPasta\**" />
+		<Content Remove="Properties\NovaPasta\**" />
+		<EmbeddedResource Remove="Properties\NovaPasta\**" />
+		<None Remove="Properties\NovaPasta\**" />
+		<_WebToolingArtifacts Remove="Properties\NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Controllers\WeatherForecastController.cs" />
+		<Compile Remove="WeatherForecast.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Pacotes essenciais -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	</ItemGroup>
+
+</Project>
