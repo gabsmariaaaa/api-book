@@ -7,6 +7,9 @@ O *API BOOK* é um projeto de API REST desenvolvido em C# com ASP.NET Core 5. El
 ## Tecnologias utilizadas:
 
 *Linguagem*: C#
+
 *Framework*: ASP.NET Core 5
+
 *IDE*: Visual Studio 2022
+
 *Documentação e Testes*: Swagger
